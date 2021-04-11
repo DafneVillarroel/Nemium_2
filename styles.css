@@ -1,0 +1,355 @@
+
+:root{
+  size: 17px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+background: #212121;
+font-family:'Nunito Sans', sans-serif;
+}
+h1{
+  color: white;
+  font-size: 64px;
+  font-size: 40px;
+  font-style: bold;
+ font-weight: 700;
+  margin-block-start: 20px;
+  margin-block-end:16px;
+  width: 636px;
+  max-inline-size:320px;
+}
+h2{
+  color: white;
+  font-size:32px;
+  margin-block-end: 40px;
+  font-style: normal;
+  font-weight: bold;
+}
+hr{
+  margin-block: 40px;
+  border: 1px solid rgba(97, 97, 97, 0.2);
+}
+h3{
+  color: white;
+  font-size:24px;
+  font-weight:normal;
+  position: sticky;
+  top:30px;
+  background:#212121;
+  inline-size: 200px;
+}
+p{
+  color:#A5A3A5;
+  margin-block-start: 16px;
+}
+ img{
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+  display: block;
+  max-inline-size: 100%;
+}
+ol li{
+  color:#A5A3A5;
+  margin-block-end: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin-inline-start:-10px;
+}
+ul li{
+  color:#A5A3A5;
+  margin-block-end: 16px;
+}
+pre{
+  color:#A5A3A5;
+  background: #3A3539;
+  width: 250px;
+  height: 368px;
+  padding-inline-end: 85px;
+  border-radius: 8px;
+  overflow: auto;
+}
+pre p{
+  padding-block: 25px;
+  padding-inline-start:40px;
+  block-size: 288px;
+  inline-size: 511px;
+  font-size: 16px;
+  line-height: 24px;
+}
+summary{
+  color: white;
+}
+header details ol li a {
+    color:#A5A3A5;
+    text-decoration:none;
+}
+  header a:hover{
+    color: white;
+}
+.hero{
+    background-image:url("./images/backgroung.png");
+    inline-size: 366px;
+    block-size:50px;
+    margin: -8px;
+}
+  header{
+    margin-block-start: 20px;
+    font-size: 14px;
+}
+  .title-header{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-block-end: 24px;
+    font-style:normal;
+  }
+  .header-content{
+    padding-inline: 20px;
+  }
+  blockquote{
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  margin-inline: 0px;
+  padding-right: 17px;
+  padding-inline-start: 24px;
+  padding-block-end: 24px;
+  padding-block-start: 10px;
+  background: #3A3539;
+  inline-size: 300px;
+  block-size: 128px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+blockquote p{
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.section-content h2{
+  margin-block-start: 122px;
+}
+.renglon h2{
+  margin-block-start: 40px;
+  font-size: 20px;
+  font-weight:100;
+}
+h4{
+  color: white;
+  font-weight: 400px;
+  font-size: 18px;
+}
+.wrapper{
+  max-inline-size:636px;
+  margin: auto;
+  margin-inline-start:20px;
+}
+.section-content{
+  counter-reset: titleList;
+}
+.section-content h3{
+  counter-increment: TitleList;
+}
+h3::before{
+  content: counter(TitleList);
+}
+.slider{
+  margin-block-start: 40px;
+  margin-block-end: 83px;
+}
+.slider-container{
+  display:block;
+  overflow:hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+   font-size: 0;
+}
+.video {
+   margin: 0;
+   display: inline-block;
+   width: 100%;
+   height: auto;/*se resetea al alto automatico*/
+   aspect-ratio: 16/9; /*proporcion de los videos,el alto el cual exportamos de youtube.*/
+   border-radius: 8px;
+}
+.slider-bullet-list{
+  text-align: center;
+  margin-block-start: 16px;
+  margin-block-end: 51px;
+}
+.slider-bullet{
+ display: inline-block;
+ inline-size: 15px;
+ block-size: 15px;
+ background:#A5A3A5;
+ border-radius: 50%;
+ width: 13px;
+ height: 13 px;
+}
+.slider-bullet:hover{
+  background:white;
+}
+.newsletter{
+  line-height: 33px;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+  margin-block-start: 40px;
+  margin-block-end:0px;
+}
+.form input{
+  border: 1px solid white;
+  inline-size: 100%;
+  font-size: 16px;
+  margin: 0 0px;
+   box-sizing: border-box;
+   margin-block: 14px;
+   padding-block: 14px;
+   padding-inline: 16px;
+   border-radius: 8px;
+   background: #212121;
+   max-width: 90%;
+}
+.form input[type="submit"]{
+  background: #157EFB;
+  border:none;
+  margin-block-end: 30px;
+   color: white;
+}
+.form ::-webkit-input-placeholder{
+  color:white;
+}
+.formulario{
+  margin-block-end: 80px;
+}
+.section h2{
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+.footer {
+  text-align: center;
+  padding-block: 28px;
+  background: white;
+  /* inline-size: 1366px; */
+  margin-inline:-20px;
+  margin-block-start:60px;
+}
+.images-footer{
+  block-size: 14px;
+  inline-size: 14px;
+  margin-inline:6px;
+  display: inline-block;
+  margin-block-start:6px;
+}
+.footer p {
+  margin-block-start: 0;
+  margin-block-end: 0px;
+  font-size: 18px;
+  line-height: 39px;
+  color:#251F24;
+}
+@media screen and (min-width:1366px){
+  .hero{
+    block-size:350px;
+    inline-size: 1366px;
+  }
+  .header-main{
+    position: sticky;
+    inset-block-start: -45px;
+  }
+  .header-content{
+    position:relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+  header{
+      margin-block-start:-30px;
+      position: absolute;
+      inset-inline-start: 50px;
+      inline-size: 188px;
+     margin-inline-start: 115px;
+  }
+  h1{
+    font-size: 60px;
+     margin-block-start: 64px;
+    max-inline-size: 174px;
+     max-inline-size:636px;
+  }
+  h2{
+     font-size:40px;
+  }
+  h3{
+     font-size:32px;
+    inline-size: 270px;
+  }
+.wrapper{
+    max-inline-size:636px;
+    margin: auto;
+    margin-inline-start: 470px;
+     margin-inline-end: 100px;
+  }
+  .box_model{
+   margin-block-start: 40px;
+   margin-block-end: -16px;
+   font-weight: normal;
+  }
+  blockquote{
+    inline-size: 636px;
+    block-size: 128px;
+    padding-block-start: 24px;
+  }
+  blockquote p{
+     font-size: 24px;
+    line-height: 32px;
+  }
+  .img-content img{
+    width: 100%;
+  }
+  pre{
+    color:#A5A3A5;
+    background: #3A3539;
+    width: 636px;
+    height: 368px;
+    padding-inline-end: 85px;
+     overflow:hidden;
+  }
+  pre p{
+    padding-block:5px;
+    padding-inline-start:40px;
+    block-size: 288px;
+    inline-size: 511px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .form input[type="submit"]{
+     margin-block-end: 80px;
+  }
+  .newsletter{
+    font-size: 24px;
+  }
+  .footer {
+      text-align: center;
+      padding-block: 48px;
+      background: white;
+      inline-size: 1366px;
+      margin-inline:-30px;
+      margin-block-start:-0px;
+      margin: -8px;
+  }
+  .footer p {
+      margin-block-start: 8px;
+      margin-block-end:19px;
+      font-size: 32px;
+      line-height: 44px;
+      color:#251F24;
+ }
+  .images-footer{
+    block-size: 18px;
+    inline-size: 18px;
+    margin-inline:10px;
+    display: inline-block;
+    margin-block-start: -0px;
+  }
+}
